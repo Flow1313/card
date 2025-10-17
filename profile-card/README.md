@@ -6,7 +6,7 @@ A simple, semantic, responsive Profile Card built using HTML, CSS, and vanilla J
 [View on Netlify](https://your-netlify-link.netlify.app)
 
 ## 💻 GitHub Repo
-[View on GitHub](https://github.com/yourusername/profile-card)
+(https://flow1313.github.io/card/profile-card/)
 
 ## 🧩 Features
 - Semantic HTML5 structure
@@ -19,4 +19,5 @@ A simple, semantic, responsive Profile Card built using HTML, CSS, and vanilla J
 ## 🧠 How to Run Locally
 1. Clone this repository:
    ```bash
+
    git clone https://github.com/yourusername/profile-card.git
