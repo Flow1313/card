@@ -19,3 +19,7 @@ This component demonstrates best practices in front-end structure, accessibility
 - Social links open in new tabs
 
 
+## 🧠 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://flow1313.github.io/card/profile-card/
