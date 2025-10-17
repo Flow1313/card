@@ -1,9 +1,11 @@
 # Accessible Responsive Profile Card
 
-A simple, semantic, responsive Profile Card built using HTML, CSS, and vanilla JavaScript.
 
-## 🚀 Live Demo
-[View on Netlify](https://your-netlify-link.netlify.app)
+A small, accessible, and responsive **Profile Card Component** built using **semantic HTML**, **modern CSS (Flexbox/Grid)**, and **vanilla JavaScript**.  
+This component demonstrates best practices in front-end structure, accessibility, responsiveness, and progressive enhancement — with automated testability through `data-testid` attributes
+
+## 🚀 Live Demo on Netlify
+(https://chimerical-monstera-01943e.netlify.app/)
 
 ## 💻 GitHub Repo
 (https://flow1313.github.io/card/profile-card/)
@@ -16,8 +18,4 @@ A simple, semantic, responsive Profile Card built using HTML, CSS, and vanilla J
 - Accessible keyboard navigation
 - Social links open in new tabs
 
-## 🧠 How to Run Locally
-1. Clone this repository:
-   ```bash
 
-   git clone https://github.com/yourusername/profile-card.git
