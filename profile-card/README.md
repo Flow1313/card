@@ -1,8 +1,7 @@
-# Accessible Responsive Profile Card
+# 🌟 Accessible Multi-Page Profile Card Project (Stage 1)
 
-
-A small, accessible, and responsive **Profile Card Component** built using **semantic HTML**, **modern CSS (Flexbox/Grid)**, and **vanilla JavaScript**.  
-This component demonstrates best practices in front-end structure, accessibility, responsiveness, and progressive enhancement — with automated testability through `data-testid` attributes
+This project builds upon the **Stage 0 Profile Card**, expanding it into a **multi-page, accessible, and responsive web application**.  
+It includes a **Home (Profile Card)**, **About Me**, and **Contact Us** page — all built with semantic HTML, modern CSS, and vanilla JavaScript.
 
 ## 🚀 Live Demo on Netlify
 (https://chimerical-monstera-01943e.netlify.app/)
@@ -10,80 +9,128 @@ This component demonstrates best practices in front-end structure, accessibility
 ## 💻 GitHub Repo
 (https://flow1313.github.io/card/profile-card/)
 
-## 🧩 Features
-- Semantic HTML5 structure
-- Responsive design (Flexbox/Grid)
-- Dynamic current time in milliseconds
-- Avatar upload + URL preview
-- Accessible keyboard navigation
-- Social links open in new tabs
 
+## 🗂️ Project Structure
 
-## 🧱 Features ✅ Fully responsive layout (mobile, tablet, and desktop) ✅ Semantic HTML5 structure (<article>, <section>, <nav>, <figure>, etc.) ✅ Accessible keyboard navigation and visible focus states ✅ Displays **current time in milliseconds** dynamically ✅ Supports **avatar upload or URL input** ✅ Opens social links in new tabs securely (target="_blank", rel="noopener noreferrer") ✅ Every visible element includes a data-testid for automated testing ✅ Mobile-first CSS layout using Flexbox --- ## 🧭 Project Structure ├── assets/ │ └── (optional images) ├── index.html ├── style.css ├── script.js └── README.md --- ## ⚙️ Run Locally ### Prerequisites You only need a modern web browser — no extra dependencies required. ### Steps 1. Clone the repository:
+profile-card/
+├── index.html # Home page – Profile Card
+├── about.html # About Me page
+├── contact.html # Contact Us page (with validation)
+├── style.css # Shared responsive styles
+├── script.js # Main JS + contact form validation
+└── README.md # Project documentation
 
+markdown
+Copy code
 
+---
+
+## 🏠 Home Page (`index.html`)
+Displays a responsive **Profile Card** featuring:
+
+- User avatar (upload or URL input)
+- Name and bio
+- Real-time clock
+- Social links (Twitter, LinkedIn, GitHub)
+- Hobbies and dislikes
+- Semantic and accessible HTML5 structure
+- Data-test IDs for automated testing
+
+**Accessibility features:**
+- Proper `<header>`, `<main>`, `<section>` use  
+- `alt` and `aria-label` attributes for clarity  
+- Keyboard-friendly navigation  
+
+---
+
+## 👤 About Me Page (`about.html`)
+
+Reflective page describing personal insights and learning journey.
+
+**Required Sections (each with `data-testid`):**
+- `test-about-bio` → Bio  
+- `test-about-goals` → Goals in this program  
+- `test-about-confidence` → Areas of low confidence  
+- `test-about-future-note` → Note to future self  
+- `test-about-extra` → Extra thoughts  
+
+**Semantic HTML:**
+- Wrapped in `<main data-testid="test-about-page">`
+- Each topic inside its own `<section>` with clear headings
+
+---
+
+## 📩 Contact Us Page (`contact.html`)
+
+A simple, accessible contact form with JavaScript validation.
+
+**Fields (all required):**
+- Full Name → `test-contact-name`  
+- Email → `test-contact-email`  
+- Subject → `test-contact-subject`  
+- Message → `test-contact-message`  
+- Submit Button → `test-contact-submit`  
+
+**Validation Rules:**
+- All fields required  
+- Valid email format (`name@example.com`)  
+- Message must be at least 10 characters  
+- Error messages tied with `aria-describedby` and  
+  IDs like `test-contact-error-email`  
+- Success message → `test-contact-success` (shows only after valid submission)
+
+---
+
+## 💻 Accessibility & Responsiveness
+
+- Built with semantic HTML5  
+- Fully keyboard navigable  
+- WCAG-aligned labeling  
+- Works on mobile, tablet, and desktop (flex/grid layout)  
+- High color contrast and visible focus states  
+
+---
+
+## ⚙️ Technologies Used
+- HTML5  
+- CSS3 (Flexbox, Grid, Media Queries)  
+- Vanilla JavaScript (DOM Manipulation & Validation)
+
+---
+
+## 📜 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+Open index.html in your browser or use a live server:
 
 bash
-   git clone https://github.com/Flow1313/card.git
+Copy code
+npx serve
+Explore the pages:
+
+/index.html → Home (Profile Card)
+
+/about.html → About Me
+
+/contact.html → Contact Us
+
+📝 Submission
+Submission Link: https://forms.gle/J65RPCVspzJJDGNP7
+
+Submit:
+
+✅ Live hosted URL
+
+✅ GitHub repo link with full code and README
+
+✨ Author
+Name: Bello Ibrahim
+Role: Frontend Developer / IT Support Professional
+Email: talk2ibb2003@gmail.com
+GitHub: flow1313
 
 
 
-Navigate to the project directory:
-
-cd card
-
-
-
-Open the project in your browser:
-
-start index.html
-or simply double-click index.html.
-
-
-
-🧪 Testing (data-testid attributes)
-
-All elements are discoverable via the following data-testid selectors:
-
-Element	             data-testid
-Profile Card Root	    test-profile-card
-User Name	          test-user-name
-User Bio	             test-user-bio
-Current Time	       test-user-time
-Avatar Image	       test-user-avatar
-Social Links List	    test-user-social-links
-Social Item Example	 test-user-social-twitter
-Hobbies List	       test-user-hobbies
-Dislikes List	       test-user-dislikes
-
-
-
-🧩 Accessibility & Responsiveness
-
-Built with semantic HTML5 elements
-
-Keyboard-focusable interactive links
-
-Responsive design for all screen sizes
-
-Mobile-first layout using CSS Flexbox
-
-Alt text provided for all images
-
-
-
-🧠 Behavior
-
-Time updates dynamically using Date.now() every second
-
-Avatar preview updates instantly from URL or uploaded image
-
-Layout adjusts automatically on different devices
-
-
-
-🧑‍💻 Author
-
-Flow1313
-
-Frontend Developer & IT Support Professional
