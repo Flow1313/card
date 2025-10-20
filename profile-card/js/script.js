@@ -34,4 +34,44 @@ avatarFileInput.addEventListener('change', (e) => {
 
     reader.readAsDataURL(file);
   }
+
 });
+
+// ===== Contact Form Validation =====
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+    let valid = true;
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+    const formSuccess = document.getElementById("formSuccess");
+
+    [nameError, emailError, messageError, formSuccess].forEach(el => (el.textContent = ""));
+
+    if (name.value.trim() === "") {
+      nameError.textContent = "Please enter your name.";
+      valid = false;
+    }
+
+    if (!email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      emailError.textContent = "Enter a valid email address.";
+      valid = false;
+    }
+
+    if (message.value.trim().length < 10) {
+      messageError.textContent = "Message must be at least 10 characters long.";
+      valid = false;
+    }
+
+    if (valid) {
+      formSuccess.textContent = "✅ Your message has been sent!";
+      contactForm.reset();
+    }
+  });
+}
